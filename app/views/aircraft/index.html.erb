@@ -1,0 +1,20 @@
+<div class="container">
+  <h3>Aircraft</h3>
+</div>
+
+<div class="container">
+  <table class="table">
+    <thead class="thead">
+      <tr>
+        <th>Type</th>
+        <th>Registration</th>
+        <th>Basic Empty Weight</th>
+        <th>Maximum Takeoff Weight</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+        <%= render partial: 'aircraft', collection: @aircraft %>
+    </tbody>
+  </table>
+</div>

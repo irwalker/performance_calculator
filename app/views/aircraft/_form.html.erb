@@ -1,0 +1,27 @@
+<%= simple_form_for(@aircraft) do |f| %>
+  <%= f.input(:type, label: 'Type') %>
+  <%= f.input(:registration, label: 'registration') %>
+  <%= f.input(:basic_empty_weight, label: 'Basic Empty Weight') %>
+  <%= f.input(:basic_empty_weight_arm, label: 'Basic Empty Weight Arm') %>
+  <%= f.input(:pilot_and_pax_arm, label: 'Pilot and Pax Arm') %>
+  <%= f.input(:rear_pax_arm, label: 'Rear Pax Arm') %>
+  <%= f.input(:fuel_capacity, label: 'Fuel Capacity') %>
+  <%= f.input(:fuel_arm, label: 'Fuel Arm') %>
+  <%= f.input(:baggage_capacity, label: 'Baggage Capacity') %>
+  <%= f.input(:baggage_arm, label: 'Baggage Arm') %>
+  <%= f.input(:maximum_takeoff_weight, label: 'Max TOW') %>
+  <%= f.input(:minimum_takeoff_weight, label: 'Min TOW') %>
+  <%= f.input(:fwd_cg_limit, label: 'Fwd CG Limit') %>
+  <%= f.input(:aft_cg_limit, label: 'Aft CG Limit') %>
+  <%= f.input(:fwd_weight_change, label: 'Fwd Weight Change') %>
+  <%= f.input(:fwd_cg_upper, label: 'Fwd CG Upper') %>
+  <%= f.input(:upper_fwd_cg_gradient, label: 'Upper Fwd CG Gradient') %>
+  <%= f.input(:upper_fwd_cg_constant, label: 'Upper Fwd CG Constant') %>
+  <%= f.input(
+    :utility_category_weight_limit,
+    label: 'Utility Category Weight Limit'
+  ) %>
+
+  <%= link_to('Back', aircraft_index_path, class: 'btn btn-outline-danger') %>
+  <%= f.submit class: 'btn btn-outline-info' %>
+<% end %>

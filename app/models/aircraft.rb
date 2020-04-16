@@ -1,6 +1,6 @@
-class Plane < ApplicationRecord
+class Aircraft < ApplicationRecord
   validates :type, presence: true
-  validates :registration, presence: true, unique: true
+  validates :registration, presence: true, uniqueness: true
   validates :basic_empty_weight , presence: true, numericality: true
   validates :basic_empty_weight_arm, numericality: true
   validates :pilot_and_pax_arm, numericality: true

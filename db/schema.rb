@@ -12,13 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_03_06_144814) do
 
-  create_table "plane_types", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "code"
-    t.string "name"
-    t.index ["code"], name: "index_plane_types_on_code"
-  end
-
-  create_table "planes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "aircraft", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "type"
     t.string "registration"
     t.integer "basic_empty_weight"
@@ -38,7 +32,13 @@ ActiveRecord::Schema.define(version: 2020_03_06_144814) do
     t.float "upper_fwd_cg_gradient"
     t.float "upper_fwd_cg_constant"
     t.float "utility_category_weight_limit"
-    t.index ["registration"], name: "index_planes_on_registration"
+    t.index ["registration"], name: "index_aircraft_on_registration"
+  end
+
+  create_table "aircraft_types", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "code"
+    t.string "name"
+    t.index ["code"], name: "index_aircraft_types_on_code"
   end
 
 end

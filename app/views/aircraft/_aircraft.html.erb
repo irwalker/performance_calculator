@@ -1,0 +1,19 @@
+<tr>
+  <td><%= aircraft.type %></td>
+  <td><%= aircraft.registration %></td>
+  <td><%= aircraft.basic_empty_weight %></td>
+  <td><%= aircraft.maximum_takeoff_weight %></td>
+  <td>
+    <%= link_to(
+      'View',
+      aircraft_path(aircraft),
+      class: "btn btn-sm btn-info"
+    ) %>
+
+    <%= link_to(
+      'Edit',
+      edit_aircraft_path(aircraft),
+      class: 'btn btn-sm btn-warning'
+    ) %>
+  </td>
+</tr>

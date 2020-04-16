@@ -1,6 +1,6 @@
-class CreatePlanes < ActiveRecord::Migration[6.0]
+class CreateAircraft < ActiveRecord::Migration[6.0]
   def change
-    create_table :planes do |t|
+    create_table :aircraft do |t|
       t.string :type
       t.string :registration
       t.integer :basic_empty_weight
@@ -22,6 +22,6 @@ class CreatePlanes < ActiveRecord::Migration[6.0]
       t.float :utility_category_weight_limit
     end
 
-    add_index :planes, :registration
+    add_index :aircraft, :registration
   end
 end

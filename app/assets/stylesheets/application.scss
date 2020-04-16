@@ -1,0 +1,14 @@
+@import "bootstrap";
+
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+.alert-notice {
+  @extend .alert-success;
+}
+
+.alert-alert {
+  @extend .alert-warning;
+}

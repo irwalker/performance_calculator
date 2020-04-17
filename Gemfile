@@ -5,9 +5,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'bootstrap', '~> 4.1.3'
+gem 'devise'
 gem 'jbuilder', '~> 2.7'
 gem 'jquery-rails'
 gem 'mysql2', '>= 0.4.4'
+gem 'omniauth-facebook'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 gem 'sassc-rails', '~> 2.1'
